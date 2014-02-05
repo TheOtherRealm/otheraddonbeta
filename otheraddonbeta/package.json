@@ -1,0 +1,31 @@
+{
+	"name": "otheraddon",
+	"fullName": "The Other Add On",
+	"id": "otheraddon@otherrealm.org",
+	"description": "Shortcuts to cut down on the number of clicks and typing you have to do to get the results you are looking for.",
+	"author": "Aaron E-J",
+	"license": "GPL 3.0",
+	"version": "0.1",
+	"dependencies": ["toolbarwidget"],
+	"preferences": [{
+			"name": "keyWikiPedia",
+			"title": "Wikipedia Key Combination",
+			"description": "The Key Combination that opens a Wikipedia page ('accel'='Ctrl')",
+			"type": "string",
+			"value": "accel-shift-1"
+		},
+		{
+			"name": "keyWikTionary",
+			"title": "Wiktionary Key Combination",
+			"description": "The Key Combination that opens a Wiktionary page ('accel'='Ctrl')",
+			"type": "string",
+			"value": "accel-shift-2"
+		},
+		{
+			"name": "keyHide",
+			"title": "Hide Key Combination",
+			"description": "The Key Combination that closes the Wiki popup ('accel'='Ctrl')",
+			"type": "string",
+			"value": "accel-shift-`"
+		}]
+}
