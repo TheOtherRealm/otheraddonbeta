@@ -65,9 +65,8 @@ var searchJSON = [
 let searchButtons = [];
 //set a bool var set to true if this is the first time the application is loading
 var loading=true;
-///// Enable to reset browser prefs ///////
-//browserPreferences.storage.search=null;//
-///////////////////////////////////////////
+//Enable to reset browser so that updates work (potential bug?)
+browserPreferences.storage.search=null;
 //if this is the first time the addon is loading, populate it
 if (!browserPreferences.storage.search) {
     browserPreferences.storage.search = searchJSON;
