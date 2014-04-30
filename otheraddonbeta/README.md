@@ -2,4 +2,8 @@ This is a Firefox add-on that serves two functions.  First, it adds buttons for 
 Screen Shots:
 <img src="https://raw2.github.com/TheOtherRealm/otheraddonbeta/master/otheraddonbeta/screenshotofsearchbuttons.png" alt="Browser Buttons">
 
+<<<<<<< HEAD
 <img src="https://raw2.github.com/TheOtherRealm/otheraddonbeta/master/otheraddonbeta/screenshotofwikioverlay.png" alt="Wiki Overlay">
+=======
+<img src="https://raw2.github.com/TheOtherRealm/otheraddonbeta/master/otheraddonbeta/screenshotofwikioverlay.png" alt="Wiki Overlay">
+>>>>>>> f09e5f4b0a0c62d32dae49604dec29a8de0432be
