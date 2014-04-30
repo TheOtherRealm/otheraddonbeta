@@ -1,4 +1,5 @@
 var selObj = '';
+//create overlays that are populated with the wiki iframe when the key combinations are pressed
 self.port.on("getSelectedPedia", function() {
 	selObj = window.getSelection();
 	$('body').prepend('<div class="wikiAddonDivRap" id="wikiAddonDivRap" style="position: absolute;  top:' + $('#hiddenY').html() + 'px;left:' + $('#hiddenX').html() + 'px"">' +
@@ -35,12 +36,14 @@ self.port.on("getSelectedTionary", function() {
 		});
 	});
 });
+//remove the iframe when the key combinations are pressed
 self.port.on('removeSelected', function() {
 	closeWiki();
 });
 function closeWiki() {
 	$('#wikiAddonDivRap').remove();
 }
+//this gets the currser location and sends it to main.js
 self.port.on('show', function() {
 	var x = window.screenX;
 	var y = window.screenY;
