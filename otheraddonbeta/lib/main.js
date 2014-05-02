@@ -1,4 +1,5 @@
-//
+//The Other Addon by Aaron E-J is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+//See <a xmlns:dct="http://purl.org/dc/terms/" href="http://otherrealm.org" rel="dct:source">http://otherrealm.org</a>.
 const {getMostRecentBrowserWindow} = require("sdk/window/utils");
 var {Hotkey} = require("sdk/hotkeys");
 var { open } = require('sdk/window/utils');
