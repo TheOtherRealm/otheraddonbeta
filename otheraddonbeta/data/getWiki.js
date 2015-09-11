@@ -4,7 +4,8 @@ var selObj = '';
 //create overlays that are populated with the wiki iframe when the key combinations are pressed
 self.port.on("getSelectedPedia", function() {
     selObj = window.getSelection();
-    $('body').prepend('<div class="wikiAddonDivRap" id="wikiAddonDivRap" style="position: absolute;  top:' + $('#hiddenY').html() + 'px;left:' + $('#hiddenX').html() + 'px"">' +
+	var wHeight=$( window ).height();
+    $('body').prepend('<div class="wikiAddonDivRap" id="wikiAddonDivRap" style="position: fixed;  top:20px;left:20px">' +
 	'<div class="btnForTheAddon btn-large IconBtnForTheAddon" type="button" style="padding: 5px;font-family: Arial, Helvetica, sans-serif; font-size: 30px;" id="moveIconBtn"> + </div>' +
 	'<a href="javascript:" onclick="closeWiki()"><div type="button" class="btnForTheAddon btn-large IconBtnForTheAddon" style="padding: 5px; font-size: 25px;font-family: Arial, Helvetica, sans-serif;" id="removeIconBtn"> x </div></a>' +
 	'<iframe id="wikiFrameContent" style="" src="https://en.wikipedia.org/wiki/Special:Search/' + selObj + '"></iframe>' +
@@ -19,7 +20,7 @@ self.port.on("getSelectedPedia", function() {
 });
 self.port.on("getSelectedTionary", function() {
     selObj = window.getSelection();
-    $('body').prepend('<div class="wikiAddonDivRap" id="wikiAddonDivRap" style="position: absolute;  top:' + $('#hiddenY').html() + 'px;left:' + $('#hiddenX').html() + 'px"">' +
+    $('body').prepend('<div class="wikiAddonDivRap" id="wikiAddonDivRap" style="position: fixed;  top:20px;left:20px">' +
 	'<div class="btnForTheAddon btn-large IconBtnForTheAddon" type="button" style="padding: 5px;font-family: Arial, Helvetica, sans-serif; font-size: 30px;" id="moveIconBtn"> + </div>' +
 	'<a href="javascript:" onclick="closeWiki()"><div type="button" class="btnForTheAddon btn-large IconBtnForTheAddon" style="padding: 5px; font-size: 25px;font-family: Arial, Helvetica, sans-serif;" id="removeIconBtn"> x </div></a>' +
 	'<iframe id="wikiFrameContent" style="" src="https://en.wiktionary.org/wiki/Special:Search/' + selObj + '"></iframe>' +
@@ -42,7 +43,7 @@ self.port.on("getSelectedTionary", function() {
 self.port.on('removeSelected', function() {
     closeWiki();
 });
-function closeWiki() {
+closeWiki=function () {
     $('#wikiAddonDivRap').remove();
 }
 //this gets the currser location and sends it to main.js

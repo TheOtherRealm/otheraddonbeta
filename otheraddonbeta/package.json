@@ -1,28 +1,32 @@
 {
+	"id":"otheraddon0.006@otherrealm.org",
+	"title": "otheraddon",
 	"name": "otheraddon",
-	"fullName": "The Other Add On",
-	"id": "otheraddon0.006@otherrealm.org",
+	"version": "0.2.0",
 	"description": "Shortcuts to cut down on the number of clicks and typing you have to do to get the results you are looking for.",
+	"main": "main.js",
 	"author": "Aaron E-J",
-	"license": "GPL 3.0",
-	"version": "0.001",
-	"dependencies": ["toolbarwidget"],
+	"engines": {
+		"firefox": ">=38.0a1",
+		"fennec": ">=38.0a1"
+	},
+	"license": "CC Attribution-NonCommercial-ShareAlike 4.0 International",
 	"preferences": [{
-			"name": "keyWikiPedia",
+			"name": "extensionskeyWikiPedia",
 			"title": "Wikipedia Key Combination",
 			"description": "The Key Combination that opens a Wikipedia page ('accel'='Ctrl')",
 			"type": "string",
 			"value": "accel-shift-1"
 		},
 		{
-			"name": "keyWikTionary",
+			"name": "extensionskeyWikTionary",
 			"title": "Wiktionary Key Combination",
 			"description": "The Key Combination that opens a Wiktionary page ('accel'='Ctrl')",
 			"type": "string",
 			"value": "accel-shift-2"
 		},
 		{
-			"name": "keyHide",
+			"name": "extensionskeyHide",
 			"title": "Hide Key Combination",
 			"description": "The Key Combination that closes the Wiki popup ('accel'='Ctrl')",
 			"type": "string",
