@@ -151,14 +151,14 @@ var hideHotKey = Hotkey({
 function triggerWikiPedia() {
     worker = tabs.activeTab.attach({
 	contentStyleFile: [data.url("css/stylsht.css"), data.url("css/jquery-ui.min.css")],
-	contentScriptFile: [data.url("getWiki.js"), data.url("js/jquery-2.1.4.min.js"), data.url("js/jquery-ui.min.js"), data.url("js/less-1.3.3.min.js")]
+	contentScriptFile: [data.url("getWiki.js"), data.url("js/jquery-2.1.4.min.js"), data.url("js/jquery-ui.min.js")]//, data.url("js/less-1.3.3.min.js")
     });
     worker.port.emit("getSelectedPedia");
 }
 function triggerWikTionary() {
     worker = tabs.activeTab.attach({
 	contentStyleFile: [data.url("css/stylsht.css"), data.url("css/jquery-ui.min.css")],
-	contentScriptFile: [data.url("getWiki.js"), data.url("js/jquery-2.1.4.min.js"), data.url("js/jquery-ui.min.js"), data.url("js/less-1.3.3.min.js")]
+	contentScriptFile: [data.url("getWiki.js"), data.url("js/jquery-2.1.4.min.js"), data.url("js/jquery-ui.min.js")]//, data.url("js/less-1.3.3.min.js")
     });
     worker.port.emit("getSelectedTionary");
 }
